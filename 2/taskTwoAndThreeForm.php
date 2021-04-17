@@ -41,7 +41,7 @@
       <label for="creditCard">Enter your credit card number:</label><br>
       <input type="text" id="creditCard" name="creditCard" value="" required><br></br>
       <label for"cardDate">Enter Credit Card Date:</label>
-			<input type="month" value="" required><br></br>
+			<input type="month" id="cardDate" value="" required><br></br>
       <label for="checkIn">Enter date of check-in:</label>
       <input type="date" id="checkIn" name="checkIn" required>
       <label for="checkOut">Enter date of check-out:</label>

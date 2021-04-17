@@ -23,12 +23,13 @@
         echo '<br> e-mail: ' . $email;
         $phone = $_POST['phone'];
         echo '<br> Phone number: ' . $phone;
-        $credit_card = $_POST['creditCard'];
-        echo '<br> Credit card number: ' . $credit_card;
-        $check_in = $_POST['checkIn'];
-        echo '<br> Check-in: ' . $check_in;
-        $check_out = $_POST['checkOut'];
-        echo '<br> Check-out: ' . $check_out;
+        $creditCard = $_POST['creditCard'];
+        $cardDate = $_POST['cardDate'];
+        echo '<br> Credit card number: ' . $creditCard, " ", 'valid to: ' . $cardDate;
+        $checkIn = $_POST['checkIn'];
+        echo '<br> Check-in: ' . $checkIn;
+        $checkOut = $_POST['checkOut'];
+        echo '<br> Check-out: ' . $checkOut;
 
         if (isset($_POST['childBed'])) {
             echo '<br> Additional bed: Yes';
