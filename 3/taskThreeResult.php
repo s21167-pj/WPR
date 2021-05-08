@@ -14,7 +14,7 @@
         <?php
         $row = 1;
 
-        if (($handle = fopen("rezerwacja.csv", "r")) !== FALSE) {
+        if (($handle = fopen("reservation.csv", "r")) !== FALSE) {
             while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
                 $num = count($data);
                 $row++;

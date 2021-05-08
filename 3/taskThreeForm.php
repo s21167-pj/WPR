@@ -62,13 +62,13 @@
 
 
 
-      $filename = './rezerwacja.csv';
+      $filename = './reservation.csv';
       if (!file_exists($filename)) {
-        $file = fopen('rezerwacja.csv', 'w');
+        $file = fopen('reservation.csv', 'w');
         fputcsv($file, array('Name', 'Surname', 'Address', 'Email', 'Phone', 'creditCard', 'cardDate', 'checkIn', 'checkOut', 'numberOfGuests'), ';');
         fclose($file);
       }
-      $file = fopen('rezerwacja.csv', 'a');
+      $file = fopen('reservation.csv', 'a');
       $dataToWrite = array(
         $name, $surname, $email, $phone, $creditCard, $cardDate, $checkIn, $checkOut, $numberOfGuests
       );
