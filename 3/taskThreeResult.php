@@ -24,6 +24,14 @@
             }
             fclose($handle);
         }
+        echo ('<form action="taskThreeForm.php" method="post">
+        <label>
+          <tr>
+              <br><br>
+              <td><input type="submit" name="submit" value="Add another guest"/></td>
+          </tr>
+        </label>
+        </form>');
 
         ?>
     </div>
